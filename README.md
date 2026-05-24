@@ -33,7 +33,7 @@ GitHub Pages — index.html
       │  GET  /health
       ▼
 Google Cloud Run API
-  https://group-b1-api-315673521215.us-central1.run.app
+  https://churn-api-315673521215.us-central1.run.app
       │
       ▼
 MLflow Model Registry (GCS)
@@ -82,7 +82,7 @@ Each prediction result shows four tags:
 
 All requests go to:
 ```
-https://group-b1-api-315673521215.us-central1.run.app
+https://churn-api-315673521215.us-central1.run.app
 ```
 
 | Method | Endpoint | Description |
