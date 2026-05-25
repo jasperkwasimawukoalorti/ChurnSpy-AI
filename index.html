@@ -507,7 +507,8 @@ async function loadModel(){
         ${mrow('Trained at',new Date(d.trained_at).toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'}))}
       </div>`;
   }catch(_){
-    document.getElementById('model-body').innerHTML='<div style="color:var(--muted);font-size:14px">Could not load model info.</div>';
+    modelLoaded=false;  // reset so next tab switch retries
+    document.getElementById('model-body').innerHTML='<div style="color:var(--muted);font-size:14px">Could not load model info — tap Model Info to retry.</div>';
   }
 }
 function mrow(k,v){
