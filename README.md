@@ -61,8 +61,8 @@ The API returns a `churn_probability` (0.0 – 1.0). The frontend interprets it 
 
 | Probability | Verdict | Risk level | Recommended action |
 |---|---|---|---|
-| ≥ 0.65 | ⚠️ High churn risk | High | Immediate retention intervention |
-| 0.32 – 0.64 | 📊 Moderate risk | Medium | Monitor and consider soft retention offer |
+| ≥ 0.45 | ⚠️ High churn risk | High | Immediate retention intervention |
+| 0.32 – 0.44 | 📊 Moderate risk | Medium | Monitor and consider soft retention offer |
 | < 0.32 | ✅ Likely to stay | Low | No action required |
 
 > **Decision threshold: 0.32** — this is the optimised threshold from training, chosen to maximise F1 score on the validation set. The `churn_prediction` tag (Churn / No Churn) reflects the model's binary decision at this threshold.
