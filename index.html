@@ -438,7 +438,7 @@ function showResult(d,risk,action){
   const prob=d.churn_probability;
   const pct=Math.round(prob*100);
   let col,icon,verdict,abg,acol;
-  if(prob>=0.65){col='var(--danger)';icon='⚠️';verdict='High churn risk';abg='var(--danger-light)';acol='var(--danger)';}
+  if(prob>=0.45){col='var(--danger)';icon='⚠️';verdict='High churn risk';abg='var(--danger-light)';acol='var(--danger)';}
   else if(prob>=0.32){col='var(--warn)';icon='📊';verdict='Moderate risk';abg='var(--warn-light)';acol='var(--warn)';}
   else{col='var(--success)';icon='✅';verdict='Likely to stay';abg='var(--success-light)';acol='var(--success)';}
 
