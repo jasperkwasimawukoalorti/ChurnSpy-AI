@@ -95,8 +95,8 @@ The frontend applies these display bands to `churn_probability`:
 | Probability | Verdict | Colour | Icon |
 |---|---|---|---|
 | < 0.31 | Likely to stay | Green (`--success`) | ✅ |
-| 0.32 – 0.44 | Moderate risk | Orange (`--warn`) | 📊 |
-| ≥ 0.45 | High churn risk | Red (`--danger`) | ⚠️ |
+| 0.32 – 0.45 | Moderate risk | Orange (`--warn`) | 📊 |
+| ≥ 0.46 | High churn risk | Red (`--danger`) | ⚠️ |
 
 > **Note:** These thresholds differ from the API's `/risk-segment` endpoint (which uses ≤ 0.29 / ≤ 0.69). This means the `Risk:` badge in the meta-chips (from the API) may show **Medium** while the card header shows **High churn risk**. This is a known inconsistency — aligning them requires updating the `/risk-segment` thresholds in `main.py`.
 
